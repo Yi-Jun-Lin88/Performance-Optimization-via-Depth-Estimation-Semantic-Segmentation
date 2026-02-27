@@ -33,13 +33,16 @@
 - 效率優化： 相較於高精度 SAM 的推論時間 31.5s，深度導向法的推論時間降至 9.26s，效率提升 240%，在維持高品質輸出的同時，大幅提升處理產能。
 - 商業洞察： 透過數據分析發現 DeepLabV3+ 在特定語意場景的優勢，確立了「多模型協作」策略，可針對不同業務場景（即時 vs. 高精度）動態切換模型。
 
-## 量化指標（Quantitative Metrics）
+## Mathematical Logic
+- 交並比（Intersection over Union，簡稱 IoU）：
+  在目標檢測（Object Detection）和語意分割中，用來衡量兩個邊框（Bounding Box）或區域重疊程度的一個指標。
+
+## 🪧 量化指標（Quantitative Metrics）
 | 模型方法 | 平均處理時間 (s) | IoU (指標) | F-score |
 | --- | --- | --- | --- |
 |本研究 (Depth-based) | 9.258 |	穩定 (穩定性高) |	0.466+ |
 |DeepLabV3+ |	1.144 |	依賴語意類別 | 0.788 (受限)|
 |Segment Anything (SAM)	| 31.519 | 低 (自動模式) | 低 (自動模式)|
-
 
 ## 📊 實驗結果視覺化
 <p align="center">
